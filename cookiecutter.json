@@ -1,14 +1,14 @@
 {
     "theme_name": "My Theme",
     "author":  "YourUsername",
-    "descriptions": "My cool looking theme for Render Engine",
-    "dependencies": [],
+    "description": "My cool looking theme for Render Engine",
+    "dependencies": "",
     "theme_class": "{{cookiecutter.theme_name | capitalize | replace(' ', '')}}",
-    "_project": "{{cookiecutter.theme_name | replace(' ', '_') | lower}}",
+    "project_name": "{{cookiecutter.theme_name | replace(' ', '_') | lower}}",
     "__prompts__": {
-        "theme-name": "The name of your theme",
+        "theme_name": "The name of your theme",
         "author": "Your name or maybe username",
-        "descriptions": "A short description of your theme",
+        "description": "A short description of your theme",
         "dependencies": "A list of dependencies that your theme requires. This will be used in generating the [yellow]`pyproject.toml`[/yellow] file",
         "theme_class": "This will be the class theme that is imported into the Site. Usually the [yellow]`theme_name`[/yellow] CamelCased"
     }
