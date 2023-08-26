@@ -1,4 +1,4 @@
-# cc-render-engine-themes
+# Cookiecutter Render Engine Theme Generator
 Build Render Engine Themes with this cookiecutter template.
 
 We're just getting started with this so feel free to check out the issues and join in on the fun.
