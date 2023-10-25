@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools", "setuptools_scm", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "{{cookiecutter.project_name|replace('_', '-')}}"
+dynamic = ["version"]
+description = "{{cookiecutter.description}}"
+readme = "README.md"
+
+dependencies = [
+    'jinja2',
+    "render-engine>=2023.10.2b2"
+    ]
+
+[project.optional-dependencies]
+dev = [
+    "axe-playwright-python",
+    "black",
+    "playwright",
+    "pytest",
+    "pytest-mock",
+    "pytest-cov",
+    "pytest-playwright",
+    "ruff",
+    ]
+
+[tool.setuptools_scm]
+local_scheme = "no-local-version"
+
+[project.urls]
+homepage = "https://github.com/{{cookiecutter.author}}/{{cookiecutter.project_name}}"
+repository = "https://github.com/{{cookiecutter.author}}/{{cookiecutter.project_name}}"
+documentation = "https://github.io/{{cookiecutter.author}}/{{cookiecutter.project_name}}"
+
+[tool.semantic_release]
+version_toml = "pyproject.toml:project.version"
+branch = "main"
+
+[tool.ruff]
+select = ["E", "F", "I", "UP"]
+target-version = "py311"
+line-length = 120
+ignore-init-module-imports = true
+
+[tool.black]
+target-version =  ["py311"]
+line-length = 120
