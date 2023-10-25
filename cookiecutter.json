@@ -1,6 +1,7 @@
 {
     "theme_name": "My Theme",
     "author":  "YourUsername",
+    "email": "your@email.com",
     "description": "My cool looking theme for Render Engine",
     "dependencies": "",
     "_theme_name": "{{cookiecutter.theme_name | capitalize | replace(' ', '')}}",
