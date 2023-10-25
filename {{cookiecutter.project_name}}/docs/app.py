@@ -8,7 +8,7 @@ from {{cookiecutter.project_name}} import {{cookiecutter._theme_name}}
 app = Site()
 app.output_path = "docs/output"
 app.site_vars.update ({
-    "SITE_TITLE": f"{{Theme Name}}",
+    "SITE_TITLE": f"{{cookiecutter._theme_name}}",
     "SITE_URL": "https://kjaymiller.github.io/render_engine_theme_kjaymiller/",
     "OWNER": {
         "name": f"{{cookiecutter.author}}",
