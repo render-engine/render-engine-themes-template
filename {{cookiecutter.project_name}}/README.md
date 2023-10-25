@@ -14,8 +14,8 @@
 
    ```python
    from render_engine import Site
-   from {{cookiecutter.project_name}} import {{cookiecutter.theme_class}}
+   from {{cookiecutter.project_name}} import {{cookiecutter._theme_name}}
 
    app = Site()
-   app.register_theme({{cookiecutter.theme_class}})
+   app.register_theme({{cookiecutter._theme_name}})
    ```

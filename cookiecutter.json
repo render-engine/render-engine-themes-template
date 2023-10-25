@@ -11,6 +11,5 @@
         "email": "Your email address",
         "description": "A short description of your theme",
         "dependencies": "A list of dependencies that your theme requires. This will be used in generating the [yellow]`pyproject.toml`[/yellow] file",
-        "theme_class": "This will be the class theme that is imported into the Site. Usually the [yellow]`theme_name`[/yellow] CamelCased"
     }
 }
