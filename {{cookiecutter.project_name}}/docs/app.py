@@ -3,7 +3,7 @@ from render_engine.page import Page
 from render_engine.parsers.markdown import MarkdownPageParser
 from render_engine.site import Site
 
-from {{cookiecutter.project_name}} import {{cookiecutter.__class_name}}
+from {{cookiecutter.project_name}} import {{cookiecutter._theme_name}}
 
 app = Site()
 app.output_path = "docs/output"
@@ -26,7 +26,7 @@ app.site_vars.update ({
     ],
     "theme": {}
 })
-app.register_themes({{theme_name}})
+app.register_themes({{cookiecutter._theme_name}})
 
 @app.collection
 class Docs(Collection):
