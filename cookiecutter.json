@@ -10,6 +10,6 @@
         "author": "Your name or maybe username",
         "email": "Your email address",
         "description": "A short description of your theme",
-        "dependencies": "A list of dependencies that your theme requires. This will be used in generating the [yellow]`pyproject.toml`[/yellow] file",
+        "dependencies": "A list of dependencies that your theme requires. This will be used in generating the [yellow]`pyproject.toml`[/yellow] file"
     }
 }
