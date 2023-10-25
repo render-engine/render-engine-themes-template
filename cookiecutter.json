@@ -3,8 +3,8 @@
     "author":  "YourUsername",
     "description": "My cool looking theme for Render Engine",
     "dependencies": "",
-    "theme_class": "{{cookiecutter.theme_name | capitalize | replace(' ', '')}}",
-    "project_name": "{{cookiecutter.theme_name | replace(' ', '_') | lower}}",
+    "_theme_name": "{{cookiecutter.theme_name | capitalize | replace(' ', '')}}",
+    "project_name": "render_engine_{{cookiecutter.theme_name | replace(' ', '_') | lower}}",
     "__prompts__": {
         "theme_name": "The name of your theme",
         "author": "Your name or maybe username",

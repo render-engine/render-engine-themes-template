@@ -3,8 +3,7 @@ from render_engine.page import Page
 from render_engine.parsers.markdown import MarkdownPageParser
 from render_engine.site import Site
 
-{% set theme_name = cookiecutter.theme_name|titlecase|replace(" ", "") %}
-from {{cookiecutter.project_name}} import {{theme_name}}
+from {{cookiecutter.project_name}} import {{cookiecutter.__class_name}}
 
 app = Site()
 app.output_path = "docs/output"
