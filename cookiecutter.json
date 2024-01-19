@@ -4,7 +4,7 @@
     "email": "your@email.com",
     "description": "My cool looking theme for Render Engine",
     "dependencies": "",
-    "_theme_name": "{{cookiecutter.theme_name | capitalize | replace(' ', '')}}",
+    "__theme_name": "{{cookiecutter.theme_name | capitalize | replace(' ', '')}}",
     "project_name": "render_engine_{{cookiecutter.theme_name | replace(' ', '_') | lower}}",
     "__prompts__": {
         "theme_name": "The name of your theme",
