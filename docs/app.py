@@ -3,17 +3,13 @@ from render_engine.page import Page
 from render_engine.parsers.markdown import MarkdownPageParser
 from render_engine.site import Site
 
-from {{cookiecutter.project_name}} import {{cookiecutter._theme_name}}
+from <PROJECT_NAME> import <THEME_CLASS>
 
 app = Site()
 app.output_path = "docs/output"
 app.site_vars.update ({
-    "SITE_TITLE": f"{{cookiecutter._theme_name}}",
+    "SITE_TITLE": f"<THEME_CLASS>",
     "SITE_URL": "https://kjaymiller.github.io/render_engine_theme_kjaymiller/",
-    "OWNER": {
-        "name": f"{{cookiecutter.author}}",
-        "email": f"{{cookiecutter.email}}",
-    },
     "NAVIGATION": [
         {
             "text": "Docs",
@@ -24,9 +20,8 @@ app.site_vars.update ({
             "url": "https://github.com/kjaymiller/render_engine_kjaymiller_theme",
         }    
     ],
-    "theme": {}
 })
-app.register_themes({{cookiecutter._theme_name}})
+app.register_themes(<THEME_CLASS>)
 
 @app.collection
 class Docs(Collection):
