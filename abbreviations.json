@@ -1,6 +1,9 @@
 {
+  "AUTHOR": "The user/org name on GitHub",
   "DESCRIPTION": "A description of your project",
   "PACKAGE_NAME": "The name of the package (minus the 'render_engine')",
+  "INSTALLABLE_PACKAGE": "Same as PACKAGE_NAME, but with underscores instead of dashes and lowercase",
   "PROJECT_NAME": "The proper name of the package (What you would see in the README)",
   "THEME_CLASS": "The name of the theme as it will be imported"
+  "PREFIX": "Unique shortname for the package where templates will live. This is where template fallbacks will be stored"
 }

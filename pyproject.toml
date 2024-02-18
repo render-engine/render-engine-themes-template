@@ -3,25 +3,21 @@ requires = ["setuptools", "setuptools_scm", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "{{cookiecutter.project_name|replace('_', '-')}}"
+name = "render-engine-<INSTALLABLE_NAME>"
 dynamic = ["version"]
-description = "{{cookiecutter.description}}"
+description = "<DESCRIPTION>"
 readme = "README.md"
 
 dependencies = [
-    'jinja2',
-    "render-engine>=2023.10.2b2"
+    "jinja2",
+    "render-engine",
+    # Include any other dependencies here
     ]
 
 [project.optional-dependencies]
 dev = [
-    "axe-playwright-python",
-    "black",
-    "playwright",
     "pytest",
-    "pytest-mock",
     "pytest-cov",
-    "pytest-playwright",
     "ruff",
     ]
 
@@ -29,9 +25,9 @@ dev = [
 local_scheme = "no-local-version"
 
 [project.urls]
-homepage = "https://github.com/{{cookiecutter.author}}/{{cookiecutter.project_name}}"
-repository = "https://github.com/{{cookiecutter.author}}/{{cookiecutter.project_name}}"
-documentation = "https://github.io/{{cookiecutter.author}}/{{cookiecutter.project_name}}"
+homepage = "https://github.com/<AUTHOR>/<PROJECT_NAME>"
+repository = "https://github.com/<AUTHOR>/<PROJECT_NAME>"
+documentation = "https://github.io/<AUTHOR>/<PROJECT_NAME>"
 
 [tool.semantic_release]
 version_toml = "pyproject.toml:project.version"
