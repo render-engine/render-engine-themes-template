@@ -1,17 +1,39 @@
-# Cookiecutter Render Engine Theme Generator
+## Building from this repo
 
-Build Render Engine Themes with this cookiecutter template.
+> **Important** this section should be removed from your version.
 
-We're just getting started with this so feel free to check out the issues and join in on the fun.
+### Clone from this template
 
-## What is Cookiecutter
+- visit this repo on GitHub
+- select "Use this Template"
+- create a unique name for your theme
 
-[Cookiecutter](https://github.com/cookiecutter/cookiecutter) is a A command-line utility that creates projects from cookiecutters (project templates), e.g. creating a Python package project from a Python package project template.
+### Replacing variables
 
-## How to create a theme
+There are some templates that you should replace with your variables.
 
-1. Install cookiecutter
-2. Run `cookiecutter gh:render-engine/cc-render-engine-themes`
-3. Follow the prompts
-4. Add your themes to the `templates` folder
-5. Add any static assets to the `static` folder
+`PACKAGE_NAME` - The name of the package (minus the "render_engine")
+`PROJECT_NAME` - The proper name of the package (What you would see in the README TITLE)
+`THEME_CLASS` - The name of the theme as it will be imported
+
+> \*\*> [!WARNING]
+> Reminder Remove this section
+
+## How to use this theme
+
+1. Install the theme
+
+   ```python
+   pip install <render_engine_PACKAGE_NAME>
+   ```
+
+2. Import the theme into your project
+
+```python
+from render_engine import Site
+from <PACKAGE_NAME> import <THEME_CLASS>
+
+
+app = Site()
+app.register_theme(<THEME_CLASS>)
+```
