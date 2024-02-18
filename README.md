@@ -12,11 +12,14 @@
 
 There are some templates that you should replace with your variables.
 
-`PACKAGE_NAME` - The name of the package (minus the "render_engine")
-`PROJECT_NAME` - The proper name of the package (What you would see in the README TITLE)
-`THEME_CLASS` - The name of the theme as it will be imported
+There is an `abbreviations.json` that you can swap the values with your data.
+Then run the `post_template_build.py`
 
-> \*\*> [!WARNING]
+```sh
+python post_template_build.py
+```
+
+> **WARNING**
 > Reminder Remove this section
 
 ## How to use this theme

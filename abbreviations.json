@@ -1,0 +1,6 @@
+{
+  "DESCRIPTION": "A description of your project",
+  "PACKAGE_NAME": "The name of the package (minus the 'render_engine')",
+  "PROJECT_NAME": "The proper name of the package (What you would see in the README)",
+  "THEME_CLASS": "The name of the theme as it will be imported"
+}
